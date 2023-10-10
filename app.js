@@ -1,15 +1,15 @@
-const gameBoard = document.querySelector("#gameboard");
+// const gameBoard = document.querySelector("#gameboard");
 
-const infoDisplay = document.querySelector("#info");
+// const infoDisplay = document.querySelector("#info");
 
-const startCells = ["", "", "", "", "", "", "", "", ""];
+// const startCells = ["", "", "", "", "", "", "", "", ""];
 
-function createBoard() {
-  startCells.forEach((cell, index) => {
-    const cellElement = document.createElement("div");
-    cellElement.classList.add("square");
-    gameBoard.append(cellElement);
-  });
-}
+// function createBoard() {
+//   startCells.forEach((cell, index) => {
+//     const cellElement = document.createElement("div");
+//     cellElement.classList.add("square");
+//     gameBoard.append(cellElement);
+//   });
+// }
 
-createBoard();
+// createBoard();
