@@ -130,3 +130,6 @@ button{
     opacity: 0.4
 }
 
+#play-again{
+    cursor: pointer;
+}

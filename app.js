@@ -1,5 +1,3 @@
-console.log("Hello");
-
 const tiles = document.querySelectorAll(".tile");
 const PLAYER_X = "X";
 const PLAYER_O = "O";
