@@ -12,6 +12,12 @@ const gameOverArea = document.getElementById("game-over-area");
 const gameOverText = document.getElementById("game-over-text");
 const playAgain = document.getElementById("play-again");
 playAgain.addEventListener("click", startNewGame);
+const playerOScoreDisplay = document.getElementById("player-o-score");
+const playerXScoreDisplay = document.getElementById("player-x-score");
+
+//Score variables
+let playerXScore = 0;
+let playerOScore = 0;
 
 //Sounds
 const gameOverSound = new Audio("sounds/game_over.wav");
@@ -75,6 +81,7 @@ function checkWinner() {
     ) {
       strike.classList.add(strikeClass);
       gameOverScreen(tileValue1);
+      updateScores(tileValue1);
       return;
     }
   }
@@ -117,3 +124,14 @@ const winningCombinations = [
   { combo: [1, 5, 9], strikeClass: "strike-diagonal-1" },
   { combo: [3, 5, 7], strikeClass: "strike-diagonal-2" },
 ];
+
+function updateScores(winnerText) {
+  if (winnerText === PLAYER_X) {
+    playerXScore++;
+    playerXScoreDisplay.textContent = playerXScore;
+  }
+  if (winnerText === PLAYER_O) {
+    playerOScore++;
+    playerOScoreDisplay.textContent = playerOScore;
+  }
+}
