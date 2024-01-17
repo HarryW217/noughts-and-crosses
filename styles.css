@@ -14,7 +14,7 @@ body {
 }
 
 h1{
-    color: brown;
+    color: rgb(0, 0, 0);
 }
 
 .tile {
@@ -93,6 +93,7 @@ h1{
 #game-over-area {
     text-align: center;
     border: red 8px solid;
+    background-color: rgb(212, 178, 23);
     padding: 50px;
     width: 50%;
     margin-top: 50px;
@@ -105,10 +106,12 @@ h1{
 
 #play-again{
     display: inline-block;
+    color: black;
+    border: solid;
 }
 
 h2{
-    color: aqua;
+    color: rgb(12, 19, 19);
     font-size: 2em;
     margin-top: 0px;
 }
@@ -146,6 +149,7 @@ button{
 #scoreboard{
     text-align: center;
     border: red 8px solid;
+    background-color: rgb(212, 178, 23);
     padding: 50px;
     width: 50%;
     margin-top: 50px;
@@ -156,3 +160,18 @@ button{
     justify-content: space-between;
 }
 
+#player-score{
+    border: red 8px solid;
+    width: 50%;
+    padding: 10px;
+}
+
+#player-o-score{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 40px;
+}
+
+#player-x-score{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
