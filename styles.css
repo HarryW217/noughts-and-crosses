@@ -98,6 +98,15 @@ h1{
     margin-top: 50px;
 }
 
+#game-over-text{
+    display: inline-block;  
+    margin-right: 10px; 
+}
+
+#play-again{
+    display: inline-block;
+}
+
 h2{
     color: aqua;
     font-size: 2em;
@@ -133,3 +142,17 @@ button{
 #play-again{
     cursor: pointer;
 }
+
+#scoreboard{
+    text-align: center;
+    border: red 8px solid;
+    padding: 50px;
+    width: 50%;
+    margin-top: 50px;
+}
+
+#score-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
